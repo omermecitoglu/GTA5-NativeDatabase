@@ -10,7 +10,7 @@ function loadNativeInfo() {
     const file = new XMLHttpRequest();
 
     file.overrideMimeType("application/json");
-    file.open("GET", "https://raw.githubusercontent.com/ItsiAdam/NativeDatabase/master/natives.json", true);
+    file.open("GET", "https://raw.githubusercontent.com/SpamCatchr42/NativeDatabase/blob/master/natives.json", true);
     file.onreadystatechange = function () {
         if (file.readyState === 4 && file.status === 200) {
             jsonData = JSON.parse(file.responseText);
